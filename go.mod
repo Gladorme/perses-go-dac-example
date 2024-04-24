@@ -2,11 +2,13 @@ module dac
 
 go 1.22.2
 
+require github.com/perses/perses v0.44.0
+
 require (
 	github.com/go-jose/go-jose/v3 v3.0.3 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/kr/pretty v0.3.1 // indirect
 	github.com/muhlemmer/gu v0.3.1 // indirect
-	github.com/perses/perses v0.44.0 // indirect
 	github.com/prometheus/client_model v0.6.0 // indirect
 	github.com/prometheus/common v0.50.0 // indirect
 	github.com/zitadel/oidc/v3 v3.18.0 // indirect
