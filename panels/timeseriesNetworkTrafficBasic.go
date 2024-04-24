@@ -11,7 +11,7 @@ import (
 func TimeseriesNetworkTrafficBasicOptions(filter string) []panel.Option {
 	return []panel.Option{
 		panel.Description("Basic network info per interface"),
-		CommonTimeSeriesPlugin(string(common.PercentUnit)),
+		CommonTimeSeriesPlugin(common.DecimalUnit),
 		panel.AddQuery(
 			query.PromQL(fmt.Sprintf(`
                 irate(node_network_receive_bytes_total{%s}[$__rate_interval]) * 8
